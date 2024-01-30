@@ -8,6 +8,15 @@
 }
 
 /* upper navbar */
+.navbar{
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+
+.hero{
+    margin-top: 157px;
+}
 
 .upper-navbar{
     width: 100vw;
@@ -24,7 +33,8 @@
 
 .lower-navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;     
+    width: 100vw;
 }
 
 .lower-navbar ul{
