@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Registration Form</title>
+  <style>
+    /* Set a centered layout */
+    body {
+      text-align: center;
+    }
+
+    .box1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Set a good color scheme */
+    form {
+      background-color: #f7f7f7;
+      border: 1px solid #ddd;
+      padding: 20px;
+      height: 100vh;
+    }
+
+    /* Make the input fields broad */
+    input {      
+      width: 35%;
+      padding: 10px;
+      margin: 6px 0;
+      border: 1px solid grey;
+      border-radius: 8px;
+    }
+
+    /* Add a submit button */
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 10px 30px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      input {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form action="/register" method="POST">
+<div class="box1">
+    <h1>Registration Form</h1>
+
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+    <input type="text" name="address" placeholder="Address" required>
+    <input type="text" name="pincode" placeholder="Pincode" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone_number" placeholder="Phone Number" required>
+    <input type="text" name="country" placeholder="Country" required>
+</div>
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>

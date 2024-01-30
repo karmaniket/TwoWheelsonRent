@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    /* Set a centered layout */
+    body {
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Set a good color scheme */
+    form {
+      background-color: #f7f7f7;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: fit-content ;
+    }
+
+    /* Make the input fields broad */
+    input {
+      width: 50%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid grey;
+      border-radius: 7px;
+    }
+
+    /* Add a submit button */
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 10px 30px;
+      margin: 20px 0;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      input {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form action="/login" method="POST">
+    <div class="cont1">
+    <h1>Login Form</h1>
+
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+  </div>
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>

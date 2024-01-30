@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cycle Rent App</title>
+    <script src="script.js"></script>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+          <!-- popup -->
+      
+          <div class="popup">
+            <div class="pbox">
+              <ul>
+                <!-- <img src="./assets/img/close.png" onclick="closePopup()" /> -->
+                <img src="./assets/img/pcross1.png" onclick="closePopup()" />
+                <li><a href="./pages/login.html">Login</a></li>
+                <li><a href="./pages/register.html">Register</a></li>
+                <li><a href="#">Sign out</a></li>
+              </ul>
+            </div>
+        </div>
+
+    <div class="container" id="home">
+
+      <div class="navbar">
+        <div class="upper-navbar">
+
+          <img
+            src="./assets/img/user.png"
+            style="height: 45px; margin: 20px; cursor: pointer;" 
+            onclick="showPopup()"
+          />
+
+          <img src="./assets/img/logo.jpg" />
+
+          <img
+            src="./assets/img/globe.jpg"
+            style="height: 55px; margin: 20px"
+          />
+
+        </div>
+
+        <div class="mobile-sidebar">
+          <img src="./assets/img/close.png" onclick="closeSideBar()" alt="" />
+          <div class="mobile">
+            <ul>
+              <li class="mobile"><a href="#" onclick="closeSideBar()">Home</a></li>
+              <li class="mobile"><a href="#store" onclick="closeSideBar()">Store</a></li>
+              <li class="mobile">
+                <a href="./pages/about.html" onclick="closeSideBar()">About</a>
+              </li>
+              <li class="mobile">
+                <a href="./pages/contact.html" onclick="closeSideBar()">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lower-navbar">
+          <div class="nlogo1 desktop">
+            <img src="./assets/img/menu.png" onclick="showSideBar()" alt="" />
+          </div>
+
+          <ul class="desktop-inner">
+            <img src="./assets/img/logo.jpg" alt="" />
+            <li class="desktop-inner"><a href="#">Home</a></li>
+            <li class="desktop-inner"><a href="#store">Store</a></li>
+            <li class="desktop-inner">
+              <a href="./pages/about.html">About</a>
+            </li>
+            <li class="desktop-inner">
+              <a href="./pages/contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nlogo2 desktop">
+            <img src="./assets/img/user.png" onclick="showPopup()" />
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="hero">
+
+
+        <div class="hero-wrapper">
+
+          <div class="pop-up">
+
+          </div>
+          <div class="left-img">
+            <img src="./assets/img/cycle.jpg" alt="" />
+          </div>
+
+          <div class="cycle1">
+            <img src="./assets/img/cycle1.jpg" alt="" />
+          </div>
+
+          <div class="description">
+            <div class="htitle">
+              <h1>TwoWheelsOnRent</h1>
+            </div>
+            <div class="hdesc">
+              <h2 class="l1">Urge for cycling ?</h2>
+              <h2 class="l2">Got no cycles ?</h2>
+              <h2 class="l3">Dont worry </h2>
+              <h2 class="l3">We got you ... </h2>
+              <h2 class="l4">Get cycles on Rent</h2>
+              <h2 class="l5">We provide variety of cycles</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="store" id="store">
+        <div class="stitle">
+          <h1>Store</h1>
+        </div>
+
+        <div class="grid">
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store.html">
+              <img src="./assets/img/cycle01.jpg" alt="" />
+            </div>
+            <div class="title">
+              <h3>MTB Pedal Ranger 3</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div>
+          </a>
+          </div>
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store1.html">
+              <img src="./assets/img/cycle02.jpg" alt="" />
+            </div>
+            <div class="title">
+              <h3>Trail Master Pro X</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div></a>
+          </div>
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store2.html">
+              <img src="./assets/img/cycle03.jpg" alt="" />
+            </div>
+            <div class="title">
+              <h3>Carbon Super Peak 3000</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div></a>
+          </div>
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store3.html">
+              <img src="./assets/img/cycle04.jpg" alt="" />
+            </div>
+            <div class="title">
+              <h3>Ridge Runner Elite</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div></a>
+          </div>
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store4.html">
+              <img src="./assets/img/cycle05.jpg" alt="" />
+            </div>
+            <div class="title">
+              <h3>Trail Blaze Femme</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div></a>
+          </div>
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store5.html">
+              <img src="./assets/img/cycle06.jpg" alt="" />
+            </div>
+            <div class="title">
+              <h3>SheRider Summit Pro</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div></a>
+          </div>
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store6.html">
+              <img src="./assets/img/cycle07.jpg" alt="" />
+            </div>
+            <div class="title">
+              <h3>LadyVenture All-Terrain</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div></a>
+          </div>
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store7.html">
+              <img src="./assets/img/cycle08.webp" alt="" />
+            </div>
+            <div class="title">
+              <h3>BellaTrail XC Explorer</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div></a>
+          </div>
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store8.html">
+              <img src="./assets/img/cycle09.jpg" alt="" />
+            </div>
+            <div class="title">
+              <h3>Fire Trailblazer Junior MTB</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div></a>
+          </div>
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store9.html">
+              <img src="./assets/img/cycle10.jpg" alt="" />
+            </div>
+            <div class="title">
+              <h3>Rugged Rider Mountain Bike</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div></a>
+          </div>
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store10.html">
+              <img src="./assets/img/cycle11.jpg" alt="" />
+            </div>
+            <div class="title">
+              <h3>Trailblazer Princess MTB</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div></a>
+          </div>
+
+          <div class="grid-item">
+            <div class="photo">
+              <a href="./pages/Inner-store/inner-store11.html">
+              <img src="./assets/img/cycle12.jpg" alt="" />
+            </div>
+            <div class="title">
+              <h3>Adventure Sparkle Trail</h3>
+            </div>
+            <div class="price">
+              <p>From ₹ 80 / hour</p>
+            </div>
+          </a>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <footer>
+
+        <div class="logo-section">
+          <img src="./assets/img/logo.jpg" alt="">
+        </div>
+
+        <div class="mid-section">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="end-section">
+          <ul>
+            <li><a href="./pages/login.html">Login</a></li>
+            <li><a href="./pages/register.html">Register</a></li>
+            <li><a href="./pages/privacy.html">Privacy</a></li>
+            <li><a href="./pages/privacy.html">Terms</a></li>
+        </ul>
+        </div>
+
+      </footer>
+
+      <div class="lower-footer">
+        <h4>Copyright © 2023 <a href="#home">TwoWheelsOnRent</a></h4>
+        <h4>Developed with ❤️ by <a target=”_blank” href="https://adarshgupta.pages.dev/">Adarsh Gupta</a> & <a href="">Aniket Vishwakarma</a></h4>
+      </div>
+    </div>
+
+  </body>
+  <script>
+    const popup = document.querySelector('.popup');
+    
+    function closePopup() {
+        console.log('hiic');
+        popup.style.display="none"
+    }
+    
+    function showPopup() {
+        console.log('hiis');
+        popup.style.display="flex";
+    }
+  </script>
+</html>

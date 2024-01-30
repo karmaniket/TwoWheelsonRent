@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 20px;
+    /* background-color: aquamarine; */
+}
+
+.img {
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc{
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+.title{
+    text-align: center;
+}
+
+.price{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.img img{
+    height: 500px;
+    border-radius: 25px;
+}
+
+input[type="datetime-local"]{
+    background-color: black;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type="number"]{
+    background-color: black;
+    padding: 18px;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.u-ini{
+    display: flex;
+}
+
+.date, .hours{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 25px 25px 0;
+}
+
+.date h2, .hours h2{
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    /* padding: 10px 13px 10px 13px; */
+    padding: 14px 16px;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: black;
+}
+
+.pay{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-box{
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 210px;
+    }
+
+    .title h1 , .price h1{
+        text-align: center;
+    }
+
+    .price h1{
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .img {
+        padding-right: 0px;
+    }
+
+    .img img{
+        /* height: 350px;
+        width: 350px; */
+        height: 300px;
+    }
+
+    .desc{
+        padding-left: 0px;
+        margin-top: 50px;
+    }
+
+    .u-ini{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .date input{
+       width: 100%;
+       padding: 12px;
+    }
+
+    .date , .hours{
+        flex-direction: column;
+    }
+
+    .date h2, .hours h2{
+        margin-bottom: 10px;
+        /* text-align: center; */
+    }
+
+    input[type="datetime-local"]{
+        margin-bottom: -20px;
+    }
+
+    input[type="number"]{
+        padding: 12px;
+    }
+}
