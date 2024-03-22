@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cycle Rent App</title>
+    <title>TwoWheelsOnRent</title>
     <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/3b54bb2e71.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
     <link href="https://db.onlinewebfonts.com/c/b8da90c1201a2b340a6108b8ad0a52b8?family=Space+Bd+BT+Bold" rel="stylesheet">
-
-  
   </head>
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
@@ -69,13 +67,13 @@
 
           <ul class="desktop-inner">
             <img src="./assets/img/logo.jpg" alt="" />
-            <li class="desktop-inner"><a href="">Home</a></li>
-            <li class="desktop-inner"><a href="#store">Store</a></li>
+            <li class="desktop-inner"><a href="#">Home</a></li>
+            <li class="desktop-inner"><a onclick="scrollToStore('store')">Store</a></li>
             <li class="desktop-inner">
-              <a href="#about">About</a>
+              <a onclick="scrollToAbout('about')">About</a>
             </li>
             <li class="desktop-inner">
-              <a href="#contact">Contact</a>
+              <a onclick="scrollToContact('contact')">Contact</a>
             </li>
           </ul>
 
@@ -120,7 +118,7 @@
         </div>
       </div>
 
-      <div class="store" id="store">
+      <div class="store" id="store" >
         <div class="stitle">
           <h1>Store</h1>
         </div>
@@ -291,6 +289,11 @@
 
 
       <div class="about-section" id="about">
+        <div id="pabout">
+
+        </div>
+        
+
         <div class="about-container">
 
           <div class="about-left">
@@ -300,7 +303,7 @@
           <div class="about-right">
             <div class="about-description">
               <h1>About Us</h1>
-              <h3><span id="greet"></span> Riders!</h3>
+              <h3><span id="aboutGreet"> </span> Riders!</h3>
               <p>
                 Embrace the freedom to explore your city on two wheels with our seamless and user-friendly platform. Whether it's a quick commute or a weekend adventure, we connect you with quality.
                 Our mission is to provide bicycles on rent on affordable cost so that every could afford riding. Currently, we are proud to serve the vibrant community of Mulund. Our services extend all over Mulund, ensuring that every corner of this dynamic locality can benefit from what we offer.
@@ -313,7 +316,7 @@
         </div>
       </div>
 
-      <div class="contact" id="contact" style="overflow: auto;">
+      <div class="contact" id="contact">
         <div class="contact-in">
           <div class="contact-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7536.905675571429!2d72.94417896084875!3d19.17541387789928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8f900d0f5d5%3A0xfb3086e0255db693!2sMulund%2C%20Mulund%20West%2C%20Mumbai%2C%20Maharashtra%20400080!5e0!3m2!1sen!2sin!4v1695672090002!5m2!1sen!2sin" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -353,26 +356,19 @@
 
         <div class="end-section">
           <ul>
+            <a href="https://www.linkedin.com/in/karmaniket/" target="_blank" class="footer_social">
+              <p><i class="fa-brands fa-linkedin"></i> Aniket Vishwakarma</p>
+            </a>
             <a href="https://www.linkedin.com/in/adarsh-gupta-652a67224/" target="_blank" class="footer_social">
-              <i class="uil uil-linkedin-alt"></i>
-            </a>
-            <a href="https://twitter.com/AdarshG52146094" target="_blank" class="footer_social">
-              <i class="uil uil-twitter-alt"></i>
-            </a>
-            <a href="https://www.instagram.com/adarsh.guptaaaa/" target="_blank" class="footer_social">
-              <i class="uil uil-instagram"></i>
-            </a>
-            <a href="https://www.instagram.com/adarsh.guptaaaa/" target="_blank" class="footer_social">
-              <i class="uil uil-medium-m"></i>
+               <p><i class="fa-brands fa-linkedin"></i> Adarsh Gupta</p>
             </a>
         </ul>
         </div>
 
       </footer>
-
       <div class="lower-footer">
-        <h4>Copyright © 2024 <a href="#home">TwoWheelsOnRent</a></h4>
-        <h4>Developed by <a target=”_blank” href="https://adarsh-gupta.pages.dev/">Adarsh Gupta</a> & <a href="">Aniket Vishwakarma</a></h4>
+        <h4>Copyright © 2024 TwoWheelsOnRent. All rights reserved.</h4>
+        <h4>Developed by <a href="https://karmaniket.pages.dev/" target="_blank">Aniket Vishwakarma</a> & <a target="_blank" href="https://adarsh-gupta.pages.dev/">Adarsh Gupta</a></h4>
       </div>
     </div>
 
@@ -391,7 +387,7 @@
       hero.style.display="block";
       store.style.display="block";
       about.style.display="block";
-      contact.style.display="block";
+      contact.style.display="flex";
       footer.style.display="flex";
       lowerfooter.style.display="block";
     }
@@ -475,14 +471,15 @@ form.addEventListener("submit", handleSubmit);
 // greetings
 
 const currentTime = new Date().getHours();
-const greet = document.getElementById("greet");
+const aboutGreet = document.getElementById("aboutGreet");
+console.log(aboutGreet);
 
 if (currentTime >= 5 && currentTime < 12) {
-  greet.innerText = "Good morning !";
+  aboutGreet.innerText = "Good morning ";
 } else if (currentTime >= 12 && currentTime < 18) {
-  greet.innerText = "Good afternoon !";
+  aboutGreet.innerText = "Good afternoon ";
 } else {
-  greet.innerText = "Good night !";
+  aboutGreet.innerText = "Good night ";
 }
 
 

@@ -45,3 +45,48 @@ function signOut() {
     window.location.href = "login.html";
   }
 
+
+//   window.addEventListener('contextmenu', function (e) {
+//     e.preventDefault();
+// });
+
+// window.addEventListener('keydown', function (e) {
+//     if (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 73 || e.keyCode == 83 || e.keyCode == 123)) {
+//         e.preventDefault();
+//         return false;
+//     }
+// });
+
+
+// script to scroll
+
+function scrollToAbout(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        var offsetTop = section.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+            top: offsetTop - 100, // Adjust the scroll position to add extra margin
+            behavior: 'smooth'
+        });
+    }
+}
+function scrollToStore(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        var offsetTop = section.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+            top: offsetTop - 150, // Adjust the scroll position to add extra margin
+            behavior: 'smooth'
+        });
+    }
+}
+function scrollToContact(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        var offsetTop = section.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+            top: offsetTop - 78, // Adjust the scroll position to add extra margin
+            behavior: 'smooth'
+        });
+    }
+}
