@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/3b54bb2e71.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
     <link href="https://db.onlinewebfonts.com/c/b8da90c1201a2b340a6108b8ad0a52b8?family=Space+Bd+BT+Bold" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
   </head>
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
@@ -34,7 +35,6 @@
 
           <i class="fa-solid fa-circle-user" onclick="showPopup()"></i>
 
-          <!-- <img src="./assets/img/logo.jpg" /> -->
           <h1 class="logo">TwoWheelsOnRent</h1>
 
             <img class="flag"
@@ -349,8 +349,8 @@
           <ul>
             <li><a href="/login.html">Login</a></li>
             <li><a href="/signup.html">Register</a></li>
-            <li><a href="./pages/privacy.html">Privacy</a></li>
-            <li><a href="./pages/privacy.html">Terms</a></li>
+            <li><a href="./policy.html">Privacy</a></li>
+            <li><a href="./policy.html">Terms</a></li>
           </ul>
         </div>
 
@@ -387,7 +387,7 @@
       hero.style.display="block";
       store.style.display="block";
       about.style.display="block";
-      contact.style.display="flex";
+      contact.style.display="grid";
       footer.style.display="flex";
       lowerfooter.style.display="block";
     }
@@ -406,8 +406,6 @@
       contact.style.display="none";
       footer.style.display="none";
       lowerfooter.style.display="none";
-      // window.onscroll = function () { window.scrollTo(0, 0); };
-      
     }
 
     if(userInfo){
@@ -478,6 +476,8 @@ if (currentTime >= 5 && currentTime < 12) {
   aboutGreet.innerText = "Good morning ";
 } else if (currentTime >= 12 && currentTime < 18) {
   aboutGreet.innerText = "Good afternoon ";
+} else if (currentTime >= 18 && currentTime < 20) {
+  aboutGreet.innerText = "Good evening";
 } else {
   aboutGreet.innerText = "Good night ";
 }

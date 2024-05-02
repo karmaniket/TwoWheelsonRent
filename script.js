@@ -1,12 +1,10 @@
 function showSideBar() {
     const mobileBar = document.querySelector('.mobile-sidebar');
-    // allContent.style.display = 'none';
     mobileBar.style.display="flex"
 }
 
 function closeSideBar() {
     const mobileBar = document.querySelector('.mobile-sidebar');
-    // allContent.style.display = 'block';
     mobileBar.style.display="none"
 }
 
@@ -15,10 +13,6 @@ function closeSideBar() {
 
 const userInfo = sessionStorage.getItem("user-info");
 const userName = localStorage.getItem("username");
-// || !userName
-// if (!userInfo) {
-//     window.location.href = "./login.html";
-// }
 
 function postSignedOut(){
     var popup1 = document.querySelector('.loggedIn1');
@@ -32,11 +26,8 @@ function postSignedOut(){
 }
 
 function signOut() {
-    // sessionStorage.removeItem('user-creds');
-    // sessionStorage.removeItem('user-info');
     sessionStorage.clear();
     localStorage.clear();
-    // closePopup();
     postSignedOut();
     console.log("session removed");
   }
@@ -44,19 +35,6 @@ function signOut() {
   function checkIfloggedIn(){
     window.location.href = "login.html";
   }
-
-
-//   window.addEventListener('contextmenu', function (e) {
-//     e.preventDefault();
-// });
-
-// window.addEventListener('keydown', function (e) {
-//     if (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 73 || e.keyCode == 83 || e.keyCode == 123)) {
-//         e.preventDefault();
-//         return false;
-//     }
-// });
-
 
 // script to scroll
 
