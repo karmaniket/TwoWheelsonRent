@@ -220,7 +220,7 @@ function saveFormData() {
                 }).then(() => {
                   // Redirect to login page after successful registration
                   window.location.href = '/index.html';
-                  alert("dtabse insertion successful");
+                  alert("Booked Successfully");
                 });
               })
               .catch(error => {
