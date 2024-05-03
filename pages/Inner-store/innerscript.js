@@ -118,7 +118,7 @@ const registerForm = document.getElementById('storeForm');
 
   if (!isValidAadhar) {
     evt.preventDefault();
-    alert('Your Aadhar card number is not valid');
+    alert('Invalid Aadhar card number');
     return;
   }
 
@@ -128,7 +128,7 @@ const registerForm = document.getElementById('storeForm');
     const now = new Date();
 
     if (dateTime <= now) {
-      alert('Please select a future date and time');
+      alert('Please select a future date & time');
       return;
     }
 
@@ -161,6 +161,7 @@ const registerForm = document.getElementById('storeForm');
 
   if(paymentProcess){
     isPaid = true;
+    
   }
 
   // saveFormData();
