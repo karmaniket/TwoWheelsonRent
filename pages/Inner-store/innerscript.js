@@ -132,23 +132,10 @@ const registerForm = document.getElementById('storeForm');
       return;
     }
 
-// email validation
-
-  // function validateEmail(email) {
-  //   evt.preventDefault();
-  //   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  //   return regex.test(email);
-  // }
-
-  // if (!validateEmail(email)) {
-  //     alert('Please enter a valid email address');
-  //     return;
-  //   }
-
 // hour validation
 
-  if (hours <= 0 || hours > 14) {
-      alert('Hours should be between 1 and 14');
+  if (hours <= 0 || hours > 10) {
+      alert('Hours should be between 1 and 10');
       return;
     }
 
@@ -240,4 +227,12 @@ function saveFormData() {
 
   initializeFirebase();
 })();
+
+var button = document.getElementById("myButton");
+var hiddenText = document.getElementById("hiddenText");
+
+button.addEventListener("click", function() {
+  hiddenText.style.display = "block";
+});
+log(detailPopup)
 
