@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url(https://db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo+Bold);
-@font-face{
+/* @font-face{
     font-family: heroFont;
     src: url(./assets/herofont.ttf);
-}
+} */
 
 *{
     margin: 0;
@@ -208,7 +208,7 @@ transition: background-size 0.5s;
 
 .description h1, .description h2{
     font-size: 35px;
-    font-family: heroFont;
+    font-family: Space Bd BT Bold;
 }
 
 .htitle{
