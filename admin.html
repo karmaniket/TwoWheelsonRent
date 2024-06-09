@@ -10,7 +10,7 @@
     <link href="https://db.onlinewebfonts.com/c/b8da90c1201a2b340a6108b8ad0a52b8?family=Space+Bd+BT+Bold" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
   </head>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./admin_style.css" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   <body>
           <!-- popup -->
@@ -49,7 +49,7 @@
           <div class="mobile">
             <ul>
               <li class="mobile"><a href="#" onclick="closeSideBar()">Home</a></li>
-              <li class="mobile"><a href="#store" onclick="closeSideBar()">Store</a></li>
+              <li class="mobile"><a href="#store" onclick="closeSideBar()">Dashboard</a></li>
               <li class="mobile">
                 <a href="#about" onclick="closeSideBar()">About</a>
               </li>
@@ -68,9 +68,9 @@
           <ul class="desktop-inner">
             <img src="./assets/img/logo.jpg" alt="" />
             <li class="desktop-inner"><a href="#">Home</a></li>
-            <li class="desktop-inner"><a onclick="scrollToStore('store')">Store</a></li>
+            <li class="desktop-inner"><a onclick="scrollToStore('adminDashboard')">Dashboard</a></li>
             <li class="desktop-inner">
-              <a onclick="scrollToAbout('about')">About</a>
+              <a onclick="scrollToAbout('adminDashboard')">About</a>
             </li>
             <li class="desktop-inner">
               <a onclick="scrollToContact('contact')">Contact</a>
@@ -111,182 +111,61 @@
               <h1>Welcome to TwoWheelsOnRent!</h1>
             </div>
             <div class="hdesc">
-              <h2 class="l1">Get cycles on Rent</h2>
+              <h2 class="l1">Rent your cycles</h2>
               <h2 class="l2">We provide rental services <br>for bicycles all over Mulund</h2>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="store" id="store" >
-        <div class="stitle">
-          <h1>Store</h1>
+      <!-- -------------Admin Dashboard --------------- -->
+
+      <div class="admin-dashboard" id="adminDashboard">
+        <h1>Dashboard</h1>
+        <div class="head-title">
+            <h2 class="adminModel">Model</h2>
+            <h2 class="quant">Quantity</h2>
+            <h2 class="dateAdmin">Date</h2>
         </div>
+        <div class="admin-row">
+            
+            <div class="image">
+                <img src="./assets/img/cycle01.jpg" alt="">
+            </div>
 
-        <div class="grid">
+            <div class="name">
+                <h3>MTB Pedal Ranger 3</h3>
+            </div>
 
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store.html">
-              <img src="./assets/img/cycle01.jpg" alt="" />
+            <div class="quantity">
+                <h3 class="stockData">4</h3>
             </div>
-            <div class="title">
-              <h3>MTB Pedal Ranger 3</h3>
-            </div>
-            <div class="price">
-              <p>₹ 100 / hour  |  Stock : 3</p>
-            </div>
-          </a>
-          </div>
 
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store1.html">
-              <img src="./assets/img/cycle02.jpg" alt="" />
+            <div class="time">
+                <h3 class="timeData">2024-05-04 17:30</h3>
             </div>
-            <div class="title">
-              <h3>Trail Master Pro X</h3>
-            </div>
-            <div class="price">
-              <p>₹ 100 / hour   |  Stock : 1</p>
-            </div></a>
-          </div>
-
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store2.html">
-              <img src="./assets/img/cycle03.jpg" alt="" />
-            </div>
-            <div class="title">
-              <h3>Carbon Super Peak 3000</h3>
-            </div>
-            <div class="price">
-              <p>₹ 100 / hour  |  Stock : 2</p>
-            </div></a>
-          </div>
-
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store3.html">
-              <img src="./assets/img/cycle04.jpg" alt="" />
-            </div>
-            <div class="title">
-              <h3>Ridge Runner Elite</h3>
-            </div>
-            <div class="price">
-              <p>₹ 100 / hour   |  Stock : 0</p>  
-            </div></a>
-          </div>
-
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store4.html">
-              <img src="./assets/img/cycle05.jpg" alt="" />
-            </div>
-            <div class="title">
-              <h3>Trail Blaze Femme</h3>
-            </div>
-            <div class="price">
-              <p>₹ 70 / hour   |  Stock : 0</p>
-            </div></a>
-          </div>
-
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store5.html">
-              <img src="./assets/img/cycle06.jpg" alt="" />
-            </div>
-            <div class="title">
-              <h3>SheRider Summit Pro</h3>
-            </div>
-            <div class="price">
-              <p>₹ 70 / hour   |  Stock : 0</p>
-            </div></a>
-          </div>
-
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store6.html">
-              <img src="./assets/img/cycle07.jpg" alt="" />
-            </div>
-            <div class="title">
-              <h3>LadyVenture All-Terrain</h3>
-            </div>
-            <div class="price">
-              <p>₹ 70 / hour   |  Stock : 0</p>
-            </div></a>
-          </div>
-
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store7.html">
-              <img src="./assets/img/cycle08.webp" alt="" />
-            </div>
-            <div class="title">
-              <h3>BellaTrail XC Explorer</h3>
-            </div>
-            <div class="price">
-              <p>₹ 70 / hour   |  Stock : 0</p>
-            </div></a>
-          </div>
-
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store8.html">
-              <img src="./assets/img/cycle09.jpg" alt="" />
-            </div>
-            <div class="title">
-              <h3>Fire Trailblazer Junior MTB</h3>
-            </div>
-            <div class="price">
-              <p>₹ 50 / hour   |  Stock : 0</p>
-            </div></a>
-          </div>
-
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store9.html">
-              <img src="./assets/img/cycle10.jpg" alt="" />
-            </div>
-            <div class="title">
-              <h3>Rugged Rider Mountain Bike</h3>
-            </div>
-            <div class="price">
-              <p>₹ 50 / hour   |  Stock : 0</p>
-            </div></a>
-          </div>
-
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store10.html">
-              <img src="./assets/img/cycle11.jpg" alt="" />
-            </div>
-            <div class="title">
-              <h3>Trailblazer Princess MTB</h3>
-            </div>
-            <div class="price">
-              <p>₹ 50 / hour   |  Stock : 0</p>
-            </div></a>
-          </div>
-
-          <div class="grid-item">
-            <div class="photo">
-              <a href="./pages/Inner-store/inner-store11.html">
-              <img src="./assets/img/cycle12.jpg" alt="" />
-            </div>
-            <div class="title">
-              <h3>Adventure Sparkle Trail</h3>
-            </div>
-            <div class="price">
-              <p>₹ 50 / hour   |  Stock : 0</p>
-            </div>
-          </a>
-          </div>
-          
         </div>
+        <div class="admin-row">
+            <div class="image">
+                <img src="./assets/img/cycle03.jpg" alt="">
+            </div>
 
+            <div class="name">
+                <h3>Carbon Super Peak 3000</h3>
+            </div>
+
+            <div class="quantity">
+                <h3 class="stockData">2</h3>
+            </div>
+
+            <div class="time">
+                <h3 class="timeData">2024-05-8 12:30</h3>
+            </div>
+        </div>
       </div>
 
+
+      <!-- -------------About --------------- -->
 
       <div class="about-section" id="about">
         <div id="pabout">
@@ -297,7 +176,7 @@
         <div class="about-container">
 
           <div class="about-left">
-            <img src="./assets/img/about-img.jpg" alt="">
+            <img src="./assets/img/about-img.jpg" alt="">`
             
           </div>
           <div class="about-right">
@@ -373,6 +252,8 @@
     </div>
 
   </body>
+  <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js"></script>
   <script>
     const popup = document.querySelector('.popup');
     
@@ -482,8 +363,49 @@ if (currentTime >= 5 && currentTime < 12) {
   aboutGreet.innerText = "Good night ";
 }
 
+        // Initialize Firebase
+        const firebaseConfig = {
+    apiKey: "AIzaSyDR9EPzxdrzO6TZQUS7QhPxis_VcFTDt3Y",
+    authDomain: "payment-db-bfdae.firebaseapp.com",
+    databaseURL: "https://payment-db-bfdae-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "payment-db-bfdae",
+    storageBucket: "payment-db-bfdae.appspot.com",
+    messagingSenderId: "529007641659",
+    appId: "1:529007641659:web:ce129c5763fefdc50a481e",
+    measurementId: "G-DF9NLM9KRR"
+  };
 
-    
+        firebase.initializeApp(firebaseConfig);
+
+        const db = firebase.firestore();
+
+        // Function to fetch data and update date
+        function updateDate() {
+            const docRef = db.collection("dbCollection").doc("dbDocument");
+
+            docRef.get().then((doc) => {
+                if (doc.exists) {
+                    const data = doc.data();
+                    const currentDate = new Date().toLocaleDateString();
+                    const updatedData = { ...data, date: currentDate };
+
+                    // Update date in Firestore
+                    docRef.update(updatedData).then(() => {
+                        // Display updated data on HTML page
+                        document.getElementsByClassName("stockData").textContent = stockQuantity;
+                        document.getElementsByClassName("dateData").textContent = date;
+                    }).catch((error) => {
+                        console.error("Error updating date:", error);
+                    });
+                } else {
+                    console.log("No such document!");
+                }
+            }).catch((error) => {
+                console.error("Error getting document:", error);
+            });
+        }
+        window.onload = updateDate;
+
   </script>
 
   

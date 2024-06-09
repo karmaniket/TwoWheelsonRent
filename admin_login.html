@@ -113,7 +113,7 @@
 <body>
   <form id="MainForm">
     <div class="cont1">
-      <h1>User Login</h1>
+      <h1>Admin Login</h1>
         <input type="text" name="username" id="username" placeholder="Enter your name" required>
         <input type="email" name="userEmail" id="userEmail" placeholder="Your email" required>
         <input type="password" name="password" id="password" placeholder="Your password" required>
@@ -121,21 +121,21 @@
 
     <div class="cont2">
       <button type="submit">Login</button>
-      <p>Don't have an account? <a href="/signup.html">Register</a></p>
+      <p>Don't have an account? <a href="/admin_reg.html">Register</a></p>
     </div>
   </form>
   <script type="module">
     (() => {
-      const firebaseConfig = {
-    apiKey: "AIzaSyA7BqOZiuTBeW8QmzjZ_wPDbzJUPWbN8d0",
-    authDomain: "registeration-db.firebaseapp.com",
-    databaseURL: "https://registeration-db-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "registeration-db",
-    storageBucket: "registeration-db.appspot.com",
-    messagingSenderId: "753934937383",
-    appId: "1:753934937383:web:9dd5a245b826870ac28d02",
-    measurementId: "G-PJ6LKCEW6N"
-  };
+        const firebaseConfig = {
+  apiKey: "AIzaSyBVj-20FhcFZl_nWLLUf1BqD1VTIDS9xyI",
+  authDomain: "admin-reg-a355e.firebaseapp.com",
+  databaseURL: "https://admin-reg-a355e-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "admin-reg-a355e",
+  storageBucket: "admin-reg-a355e.appspot.com",
+  messagingSenderId: "853197617902",
+  appId: "1:853197617902:web:f060b31db1e8eb7b7791ff",
+  measurementId: "G-7LWB540TQ5"
+};
 
 
       const initializeFirebase = () => {
@@ -160,7 +160,7 @@
                         sessionStorage.setItem("user-info",EmailInp);
                         sessionStorage.setItem("user-name",UserInp);
                         sessionStorage.setItem("user-creds",JSON.stringify(credentials.user));
-                        window.location.href = "index.html";
+                        window.location.href = "admin.html";
                       }
                     });
                   })

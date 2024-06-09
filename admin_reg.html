@@ -104,8 +104,6 @@
       color: #191970;
     }
 
-
-    
   </style>
 </head>
 <body>
@@ -120,7 +118,7 @@
   <div class="col-2">
     <form id="MainForm">
       <div class="box1">
-        <h1>User Registration</h1>
+        <h1>Admin Registration</h1>
   
         <input class="reg-left" type="text" name="name" id="name" placeholder="Name" required>
         <input type="password" name="password" id="password" placeholder="Password" required>
@@ -133,7 +131,7 @@
         <div class="lower">
           <button class="" type="submit"">Register</button>
           <button type="button" onclick="clearForm()"> Clear Form</button>
-          <p>Already a member? <a href="/login.html">Login</a></p>
+          <p>Already a member? <a href="/admin_login.html">Login</a></p>
         </div>
       </div>
     </form>
@@ -214,16 +212,16 @@
     };
 
     (() => {
-      const firebaseConfig = {
-    apiKey: "AIzaSyA7BqOZiuTBeW8QmzjZ_wPDbzJUPWbN8d0",
-    authDomain: "registeration-db.firebaseapp.com",
-    databaseURL: "https://registeration-db-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "registeration-db",
-    storageBucket: "registeration-db.appspot.com",
-    messagingSenderId: "753934937383",
-    appId: "1:753934937383:web:9dd5a245b826870ac28d02",
-    measurementId: "G-PJ6LKCEW6N"
-  };
+        const firebaseConfig = {
+  apiKey: "AIzaSyBVj-20FhcFZl_nWLLUf1BqD1VTIDS9xyI",
+  authDomain: "admin-reg-a355e.firebaseapp.com",
+  databaseURL: "https://admin-reg-a355e-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "admin-reg-a355e",
+  storageBucket: "admin-reg-a355e.appspot.com",
+  messagingSenderId: "853197617902",
+  appId: "1:853197617902:web:f060b31db1e8eb7b7791ff",
+  measurementId: "G-7LWB540TQ5"
+};
 
 
       const initializeFirebase = () => {
@@ -241,9 +239,9 @@
               const auth = getAuth(app);
 
               onAuthStateChanged(auth, (user) => {
-                if (!user && window.location.pathname !== '/signup.html') {
+                if (!user && window.location.pathname !== '/admin_reg.html') {
                   // User is not logged in, redirect to signup.html
-                  window.location.href = '/signup.html';
+                  window.location.href = '/admin_reg.html';
                 }
               });
 
@@ -269,7 +267,7 @@
                       email: EmailInp
                     }).then(() => {
                       // Redirect to login page after successful registration
-                      window.location.href = '/login.html';
+                      window.location.href = '/admin_login.html';
                     });
                   })
                   .catch(error => {

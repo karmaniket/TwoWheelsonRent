@@ -198,7 +198,7 @@ const p = [
 }
 
 if (!(dateTime < now) && !(differenceInDays > 15) && !(hours > 0 && hours <= 10)) {
-  var StockQuantityInp = 3;
+  var StockQuantityInp = 0;
   if (StockQuantityInp <= 0){
   evt.preventDefault();
   alert('Out of Stock!');
