@@ -1,6 +1,10 @@
-# Two Wheels On Rent
+<h1 align="center">Two Wheels on Rent</h1>
 
 Two Wheels On Rent is a web platform designed to provide users with a seamless and efficient way to rent bicycles. The platform offers a user-friendly interface for browsing available cycles, registering as a user or admin, and managing bookings. 
+
+---
+
+https://github.com/user-attachments/assets/3de851d3-cf32-4a22-83ef-ca8a5953f97b
 
 ---
 
@@ -28,24 +32,24 @@ Admin: Admins can log in and manage inventory.
 
 ```bash
 . 
-├── index.html # Main landing page 
-├── login.html # User login page 
-├── signup.html # User registration page 
-├── admin.html # Admin dashboard 
-├── admin_login.html # Admin login page 
-├── admin_reg.html # Admin registration page 
-├── policy.html # Privacy policy 
-├── script.js # Main JS logic 
-├── signup.js # Signup page JS 
-├── admin_script.js # Admin page JS 
-├── style.css # Main styles 
-├── admin_style.css # Admin styles 
+├── index.html         # Main landing page 
+├── login.html         # User login page 
+├── signup.html        # User registration page 
+├── admin.html         # Admin dashboard 
+├── admin_login.html   # Admin login page 
+├── admin_reg.html     # Admin registration page 
+├── policy.html        # Privacy policy 
+├── script.js          # Main JS logic 
+├── signup.js          # Signup page JS 
+├── admin_script.js    # Admin page JS 
+├── style.css          # Main styles 
+├── admin_style.css    # Admin styles 
 ├── assets/ 
-│ ├── img/ # Images 
-│ ├── css/ # Additional CSS files 
-│ └── heroFont.ttf # Custom font 
+│ ├── img/             # Images 
+│ ├── css/             # Additional CSS files 
+│ └── heroFont.ttf     # Custom font 
 └── pages/ 
-└── Inner-store/ # Individual cycle detail/booking pages
+└── Inner-store/       # Individual cycle detail/booking pages
 ```
 
 ---
