@@ -1,6 +1,6 @@
 <h1 align="center">Two Wheels on Rent</h1>
 
-Two Wheels On Rent is a web platform designed to provide users with a seamless and efficient way to rent bicycles. The platform offers a user-friendly interface for browsing available cycles, registering as a user or admin, and managing bookings. 
+`Two Wheels On Rent` is a web platform designed to provide users with a seamless and efficient way to rent bicycles. The platform offers a user-friendly interface for browsing available cycles, registering as a user or admin, and managing bookings. 
 
 ---
 
@@ -18,10 +18,10 @@ https://github.com/user-attachments/assets/3de851d3-cf32-4a22-83ef-ca8a5953f97b
 ---
 
 ## Usage
-Browse Cycles: Go to the Store section to view available cycles.
-Book a Cycle: Click on a cycle to view details and book by filling out the form.
-Register/Login: Use the login/register links in the navigation or popup.
-Admin: Admins can log in and manage inventory.
+- Browse Cycles: Go to the Store section to view available cycles.
+- Book a Cycle: Click on a cycle to view details and book by filling out the form.
+- Register/Login: Use the login/register links in the navigation or popup.
+- Admin: Admins can log in and manage inventory.
 
 > [!Note]
 >All bookings and user data are for demonstration purposes only.
@@ -73,7 +73,7 @@ If you want to use your own Firebase project, replace the Firebase config in the
 
 ## Developed by
 
-This was our final year project and it was planned and executed by me; responsible for overall project workflow and UI design and my colleague; responsible for backend implementations. Yet, with whatever knowledge we had we developed it from scratch.
+This was our final year project and it was planned and executed by me; responsible for overall project workflow and UI design <br> and my colleague; responsible for backend implementations. Yet, with whatever knowledge we had we developed it from scratch.
 
 [Adarsh Gupta](https://adarsh-gupta.pages.dev/) <br>
 [Aniket Vishwakarma](https://karmaniket.pages.dev/)
