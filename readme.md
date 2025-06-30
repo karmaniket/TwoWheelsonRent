@@ -73,7 +73,7 @@ If you want to use your own Firebase project, replace the Firebase config in the
 
 ## Developed by
 
-This was our final year project and it was planned and executed by me; responsible for overall project workflow and UI design <br> and my colleague; responsible for backend implementations. Yet, with whatever knowledge we had we developed it from scratch.
+This was our final year project and it was planned and executed by me; responsible for overall project workflow and UI design, and my colleague; responsible for backend implementations. <br> Yet, with whatever knowledge we had we developed it from scratch.
 
 [Adarsh Gupta](https://adarsh-gupta.pages.dev/) <br>
 [Aniket Vishwakarma](https://karmaniket.pages.dev/)
