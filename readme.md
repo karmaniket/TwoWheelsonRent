@@ -2,9 +2,8 @@
 
 `Two Wheels On Rent` is a web platform designed to provide users with a seamless and efficient way to rent bicycles. The platform offers a user-friendly interface for browsing available cycles, registering as a user or admin, and managing bookings. 
 
----
-
-https://github.com/user-attachments/assets/3de851d3-cf32-4a22-83ef-ca8a5953f97b
+## Demo
+[![Demo](https://img.youtube.com/vi/8UTA35Z9fNM/maxresdefault.jpg)](https://youtu.be/8UTA35Z9fNM)
 
 ---
 
