@@ -57,9 +57,11 @@ cd TwoWheelsonRent
 ```
 
 ### 2. Open in Browser
+
 Open index.html in your preferred browser.
 
-### 3. Firebase Setup 
+### 3. Firebase Setup
+
 If you want to use your own Firebase project, replace the Firebase config in the JS files with your own credentials.
 
 ## Developed by
