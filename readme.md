@@ -1,6 +1,6 @@
 <h1 align="center">Two Wheels on Rent</h1>
 
-**Two Wheels On Rent** is a web platform designed to provide users with a seamless and efficient way to rent bicycles. The platform offers a user-friendly interface for browsing available cycles, registering as a user or admin, and managing bookings.
+**Two Wheels On Rent** is a web platform designed to provide users a seamless and efficient way to rent bicycles. The platform offers a user-friendly interface for browsing available cycles, registering as a user or admin, and managing bookings.
 
 ## Demo
 
