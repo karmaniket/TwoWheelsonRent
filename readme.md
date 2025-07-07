@@ -43,7 +43,8 @@
 │   ├── img/                # Images 
 │   ├── css/                # Additional CSS 
 │   └── heroFont.ttf        # Custom font 
-└── pages/Inner-store/      # Individual cycle detail/booking pages
+└── pages/
+    └── Inner-store.html    # Individual cycle detail/booking pages
 ```
 
 ## Setup
